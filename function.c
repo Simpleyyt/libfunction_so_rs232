@@ -502,7 +502,7 @@ int GET_SNR(HANDLE commHandle, int DeviceAddress, unsigned char mode, unsigned c
 	if (result != 0)
 		return result;
 	snr[0] = DATA[0];
-	copyData(DATA,0,value,1,4);
+	copyData(DATA,1,value,0,4);
 	return Statue;   
 }
 
